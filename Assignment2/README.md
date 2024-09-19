@@ -9,26 +9,26 @@ The design is responsive, ensuring accessibility across various devices, and inc
 ## Key Features and HTML Elements Used
 
 ## Key Features and HTML Elements Used
-**head**: Contains meta-information about the document such as the character set and links to external CSS and the favicon.
-**meta**: Defines metadata, including viewport settings for responsive design.
-**title**: Sets the title of the document that appears in the browser tab.
-**link**: Links external resources such as the CSS stylesheet and favicon.
-**body**: Contains the primary content of the website.
-**header**: The top section of the page that includes the navigation links.
-**menu**: Defines the navigation structure with links to sections like About, Skills, Projects, and Contact.
-**section**: Groups different sections of the portfolio, such as About, Skills, Projects, and Contact.
-**h1**, **h2**, **h3**: Used for headings and to structure content in the document.
-**p**: Represents a paragraph of text, used in various sections like About Me and Contact.
-**ul**, **li**: Used for unordered lists, particularly in the Skills section.
-**img**: Embeds images such as the profile picture and company logos.
-**table**, **thead**, **tbody**, **tr**, **th**, **td**: Used for the project table, listing project details.
-**details**, **summary**: Toggles additional content visibility for each project and its respective video.
-**video**, **source**: Embeds video elements in the Projects section to showcase behind-the-scenes work.
-**form**: Provides a form in the Stay Connected section where users can submit their name and contact information.
-**label**: Used to label form fields like name and email.
-**input**: Creates interactive fields for users to input text or email.
-**audio**, **source**: Embeds audio content for testimonials in the Testimonials section.
-**footer**: Marks the footer with copyright information.
+- **head**: Contains meta-information about the document such as the character set and links to external CSS and the favicon.
+- **meta**: Defines metadata, including viewport settings for responsive design.
+- **title**: Sets the title of the document that appears in the browser tab.
+- **link**: Links external resources such as the CSS stylesheet and favicon.
+- **body**: Contains the primary content of the website.
+- **header**: The top section of the page that includes the navigation links.
+- **menu**: Defines the navigation structure with links to sections like About, Skills, Projects, and Contact.
+- **section**: Groups different sections of the portfolio, such as About, Skills, Projects, and Contact.
+- **h1**, **h2**, **h3**: Used for headings and to structure content in the document.
+- **p**: Represents a paragraph of text, used in various sections like About Me and Contact.
+- **ul**, **li**: Used for unordered lists, particularly in the Skills section.
+- **img**: Embeds images such as the profile picture and company logos.
+- **table**, **thead**, **tbody**, **tr**, **th**, **td**: Used for the project table, listing project details.
+- **details**, **summary**: Toggles additional content visibility for each project and its respective video.
+- **video**, **source**: Embeds video elements in the Projects section to showcase behind-the-scenes work.
+- **form**: Provides a form in the Stay Connected section where users can submit their name and contact information.
+- **label**: Used to label form fields like name and email.
+- **input**: Creates interactive fields for users to input text or email.
+- **audio**, **source**: Embeds audio content for testimonials in the Testimonials section.
+- **footer**: Marks the footer with copyright information.
 
 ## Project Structure
 portfolio/
