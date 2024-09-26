@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<title>Mitul's Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<div id="nameDisplay"></div>
+    <div id="idDisplay"></div>
+
+	
+	<table id="myTable">
+		<tr>
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br />STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onClickCheckBox(this)" /><br /><br /><img src="./down.png" width="25px"
+					class="imgbro" onclick="tableView(this)"></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+		
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor: 1<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onClickCheckBox(this)" /><br /><br /><img src="./down.png" width="25px" onclick="tableView(this)"/></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+		
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor: 2<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onClickCheckBox(this)"/><br /><br /><img src="./down.png" width="25px" onclick="tableView(this)"/></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor: 3<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+	</table>
+
+	<br /><br />
+
+	<button id="button" disabled="disabled">SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick="addrecord()">Add New Student</button>
+
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
