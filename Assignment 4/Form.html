@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Feedback</title>
+	<style>
+		label {
+			float: left;
+			width: 150px;
+		}
+
+		#container {
+			width: 700px;
+			margin: auto;
+			background-color: beige;
+		}
+
+		main {
+			padding: 50px;
+		}
+
+		.error {
+			color: red;
+			display: none;
+			font-size: 14px;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+
+		<main>
+			<h2>Feeback</h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<form method="post" novalidate id="feedbackForm">
+				<label>Title*:</label>
+				<input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+				<input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+				<input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs.
+				<br><br>
+
+				<label for="firstName">First Name*:</label>
+				<input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+				<div class="error" id="error-firstName"> Please enter a valid first name</div>
+				<br><br>
+
+
+				<label for="lastName">Last Name*:</label>
+				<input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+				<div class="error" id="error-lastName"> Please enter a valid last name</div>
+				<br><br>
+
+
+				<label for="emailId">Email Id*:</label>
+				<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required />
+				<div class="error" id="error-emailId"> Please enter a valid email id</div>
+				<br><br>
+
+
+				<label for="phoneNumber">Phone Number*:</label>
+				<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required />
+				<div class="error" id="error-phoneNumber"> Please enter a valid phone number</div>
+				<br><br>
+
+				<label for="streetAddress1">Street Address 1*:</label>
+				<input type="text" name="streetAddress1" id="streetAddress1" placeholder="Street Address" required />
+				<div class="error" id="error-streetAddress1"> Please enter a valid street address</div>
+				<br><br>
+
+				<label for="streetAddress2">Street Address 2:</label>
+				<input type="text" name="streetAddress2" id="streetAddress2" placeholder="Street Address" />
+				<div class="error" id="error-streetAddress2"> Please enter a valid street address</div>
+				<br><br>
+
+				<label for="city">City*:</label>
+				<input type="text" name="city" id="city" placeholder="City" required />
+				<div class="error" id="error-city"> Please enter a valid city</div>
+				<br><br>
+
+				<label for="state">State*:</label>
+				<input type="text" name="state" id="state" placeholder="state" required />
+				<div class="error" id="error-state"> Please enter a valid state</div>
+				<br><br>
+
+				<label for="zipcode">ZipCode*:</label>
+				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required />
+				<div class="error" id="error-zipCode"> Please enter a valid zipcode</div>
+				<br><br>
+
+				<label for="src">How did you hear*:</label>
+				<input type='checkbox' name="source" value="facebook" /> Facebook
+				<input type='checkbox' name="source" value="google" /> Google
+				<input type='checkbox' name="source" value="yelp" /> Yelp
+				<br><br>
+
+				<label for="comments">Comments*:</label>
+				<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+				<br><br>
+
+				<label for="selection">What would you like to have?*:</label>
+				<select id="selection" name="selection" onchange="addCheckbox()" required>
+					<option value="Tea">Tea</option>
+					<option value="Coffee">Coffee</option>
+					<option value="Soft Drink">Soft Drink</option>
+					<option value="Donut">Donut</option>
+					<option value="Pastry">Pastry</option>
+				</select>
+				<br><br>
+				<div id="checkboxContainer"></div>
+				<br><br>
+
+				<button type='button' id="submitBtn" onclick="createTable()" disabled>Submit</button>
+				<button type="reset" onclick="resetForm()">Reset</button>
+				<br><br>
+			</form>
+		</main>
+	</div>
+	<div id="tableContainer" style="margin: 10em;"></div>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
